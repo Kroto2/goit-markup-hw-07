@@ -1,0 +1,225 @@
+.background{
+    width: 100%;
+    background-color:$background-footer;
+}
+.top-section{
+    display: flex;
+    text-align: center;
+    padding: 200px;
+    max-width: 1600px;
+    width: 100%;
+    height: 600px;
+    height: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundimg.jpg);
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    &__header{
+        font-size: map-get($font-size, main-text);
+        color: $primary-color;
+        letter-spacing: map-get($letter-spacing, header);
+        font-weight: map-get($font-weight, extrabold);
+        text-align: center;
+        line-height: 1.364;
+    }
+
+    &__button{
+        background-color: $hover-text;
+        border-radius: 4px;
+        color: $primary-color;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        border: none;
+        font-family: $standard-font;
+        font-size: map-get($font-size, enlarged);
+        font-weight: map-get($font-weight, bold);
+        letter-spacing: map-get($letter-spacing, header);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus,
+        &:active{
+            background-color: #135a91;
+        }
+    }
+}
+
+.middle-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 94px 0 0 0;
+    list-style: none;
+
+    &__header{
+        font-weight: map-get($font-weight, bold);
+        color: $secondary-text;
+        font-size: map-get($font-size, standard);
+        margin: 0 0 10px 0;
+    }
+
+    &__icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        height: 120px;
+        width: 270px;
+        background-color: $background-card;
+    }
+}
+
+.lower-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__header{
+        font-size: map-get($font-size, section-header);
+        color: $secondary-text;
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        gap:30px;
+        padding-left: 0;
+    }
+    &__figure{
+        height: 294px;
+        width: 370px;
+        margin:0;
+    }
+
+    &__description{
+        color: $primary-color;
+        font-weight: map-get($font-weight, bold);
+        background-color: #2f303acc;
+        height: 70px;
+        text-align: center;
+        position: relative;
+        padding: 27px 0;
+        top: -72px;
+    }
+}
+
+.team-section{
+    background-color: $background-card;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height: 708px;
+
+    &__header{
+        font-size: map-get($font-size, section-header);
+        color: $secondary-text;
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+        list-style: none;
+        gap:30px;
+        padding-left: 0;
+    }
+
+    &__card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        text-align: center;
+        background-color: $primary-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__name{
+        margin: 30px 0 10px 0;
+        line-height: 1.1875;
+        font-size: map-get($font-size, enlarged);
+        font-weight: map-get($font-weight, medium);
+        color: $secondary-text;
+    }
+
+    &__proffesion{
+        line-height: 1.1875;
+        font-size: map-get($font-size, enlarged);
+        margin: 0 0 16px 0;
+    }
+
+    &__icons{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px
+    }
+
+    &__icon{
+        fill: $icon-background;
+        background-color: $primary-color;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            fill: $primary-color;
+            background-color: $hover-text;
+            cursor: pointer;
+        }
+    }
+}
+
+.client-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+    &__header{
+        font-size: map-get($font-size, section-header);
+        color: $secondary-text;
+        text-align: center;
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        gap: 30px;
+        padding-left: 0;
+    }
+
+    &__icon{
+        border-radius: 4px;
+        border: $icon-background solid 1px;
+        width: 170px;
+        height: 92px;
+        fill: $icon-background;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            fill: $hover-text;
+            border: $hover-text solid 1px;
+        }
+    }
+}
+

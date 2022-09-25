@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
  </head> 
 <body>
     <header class="header container">
-        <a href="index.html" class="header__logo logo"><span class="header__logo--color">Web</span>Studio</a>
+        <a href="index.html" class="header__logo"><span class="header__logo--color">Web</span>Studio</a>
         <nav>
         <ul class="header__nav">
             <li><a class="header__nav--color header--active" href="index.html">Agencja</a></li>
@@ -37,14 +37,16 @@
     </header>
     <div class="header-border"></div>
     <main>
+        <div class="background">
         <section class="top-section">
             <h1 class="top-section__header">EFEKTYWNE ROZWIĄZANIA <br />
                 DLA WASZEGO BIZNESU</h1>
             <button class="top-section__button" type="button" data-modal-open>Zamów usługę</button>
         </section>
-        <section class="middle-section section">
+        </div>
+        <section>
             <div class="container">
-            <ul class="middle-section__list">
+            <ul class="middle-section">
                 <li>
                     <div class="middle-section__icon">
                         <svg width="270" height="120">
@@ -199,7 +201,7 @@
                 </li>
                 <li class="team-section__card">
                     <img src="./images/johndoe3.jpg" alt="John Doe" width="270" height="260" />
-                    <h4 class="team-section__header">John Doe</h4>
+                    <h4 class="team-section__name">John Doe</h4>
                     <p class="team-section__proffesion">Marketing</p>
                      <div class="team-section__icons">
                         <svg class="team-section__icon" width="44" height="44">
@@ -216,7 +218,7 @@
                             x="12"
                             y="12"></use>
                         </svg>
-                        <svg class="team-section__icon--style" width="44" height="44">
+                        <svg class="team-section__icon" width="44" height="44">
                             <use xlink:href="./images/icons.svg#icon-facebook"
                             width="20"
                             height="20"
@@ -234,7 +236,7 @@
                 </li>
                 <li class="team-section__card">
                     <img src="./images/johndoe4.jpg" alt="John Doe" width="270" height="260" />
-                    <h4 class="team-section__header">John Doe</h4>
+                    <h4 class="team-section__name">John Doe</h4>
                     <p class="team-section__proffesion">UI Designer</p>
                      <div class="team-section__icons">
                         <svg class="team-section__icon" width="44" height="44">
@@ -284,7 +286,7 @@
                     </svg>
                     </li>
                     <li>
-                    <svg class="clients-section__icon" width="170" height="92">
+                    <svg class="client-section__icon" width="170" height="92">
                         <use xlink:href="./images/icons.svg#icon-client-2"
                         width="106"
                         height="60"
@@ -293,7 +295,7 @@
                     </svg>
                     </li>
                     <li>
-                    <svg class="clients-section__icon" width="170" height="92">
+                    <svg class="client-section__icon" width="170" height="92">
                         <use xlink:href="./images/icons.svg#icon-client-3"
                         width="106"
                         height="60"
@@ -302,7 +304,7 @@
                     </svg>
                     </li>
                     <li>
-                    <svg class="clients-section__icon" width="170" height="92">
+                    <svg class="client-section__icon" width="170" height="92">
                         <use xlink:href="./images/icons.svg#icon-client-4"
                         width="106"
                         height="60"
@@ -311,7 +313,7 @@
                     </svg>
                     </li>
                     <li>
-                    <svg class="clients-section__icon" width="170" height="92">
+                    <svg class="client-section__icon" width="170" height="92">
                         <use xlink:href="./images/icons.svg#icon-client-5"
                         width="106"
                         height="60"
@@ -320,7 +322,7 @@
                     </svg>
                     </li>
                     <li>
-                    <svg class="clients-section__icon" width="170" height="92">
+                    <svg class="client-section__icon" width="170" height="92">
                         <use xlink:href="./images/icons.svg#icon-client-6"
                         width="106"
                         height="60"
@@ -335,7 +337,7 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__adress">
-        <a class="footer__logo logo" href="index.html"><span class="footer__logo--color">Web</span>Studio</a>
+        <a class="footer__logo" href="index.html"><span class="footer__logo--color">Web</span>Studio</a>
         <address class="footer__text">m. Warszawa, Aleje Jerozolimskie 21</address>
             <ul class="footer__links">
                 <li><a class="footer__link"  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -391,8 +393,8 @@
                     <use xlink:href="./images/icons.svg#icon-send"
                     width="24"
                     height="24"
-                    x="100"
-                    y="4"
+                    x="25"
+                    y="0"
                     ></use>
                 </svg>
                 </button>
@@ -438,7 +440,7 @@
             </label>
             <label class="modal__terms-of">
                 <input type="checkbox"/>
-                <svg class="modal__checkeckmark">
+                <svg class="modal__checkmark">
                     <use xlink:href="./images/icons.svg#icon-tick"
                     width="11"
                     height="8"
@@ -446,7 +448,7 @@
                     y="3">
                     </use>
                 </svg>
-                <span class="check-text"></span> Oświadczam iż akceptuję
+                <span class="modal__check-text"></span> Oświadczam iż akceptuję
                 <a href="#" class="modal__link">Regulamin</a> i
                 <a href="#" class="modal__link">Politykę Prywatności.</a>
             </label>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./css/styles.css" rel="stylesheet" />
+        <link href="./css/main.min.css" rel="stylesheet" />
         <title>Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     </head>
     <body>
         <header class="header container">
-            <a href="index.html" class="header__logo logo"> <span>Web</span>Studio</a>
+            <a href="index.html" class="header__logo"> <span class="header__logo--color">Web</span>Studio</a>
             <nav>
             <ul class="header__nav">
                     <li><a class="header__nav--color" href="index.html">Agencja</a></li>
@@ -207,12 +207,12 @@
         </main>
             <footer class="footer">
                 <div class="footer__container container">
-                    <div class="footer__adress">
-                <a class="footer__logo logo" href="index.html"><span class="footer__logo--color">Web</span>Studio</a>
+                    <div >
+                <a class="footer__logo" href="index.html"><span class="footer__logo--color">Web</span>Studio</a>
                     <address class="footer__text">m. Warszawa, Aleje Jerozolimskie 21</address>
                     <ul class="footer__links">
                         <li><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="" href="tel:+48111111111">+48 111 111 111</a></li>
+                        <li><a class="footer__link" href="tel:+48111111111">+48 111 111 111</a></li>
                     </ul>
                     </div>
                 <div>
@@ -259,16 +259,15 @@
             <div>
                 <h4 class="footer__header">ZAPISZ SIĘ DO NEWSLETTERA</h4>
                 <input type="text" class="footer__sign-up" placeholder="E-mail"/>
-                <button type="submit" class="footer__button">Zapisz się</button>
+                <button type="submit" class="footer__button">Zapisz się
                 <svg class="footer__button--icon">
-                    <use xlink:href="./images/icons.svg#icon-send"
-                    width="24"
-                    height="24"
-                    x="130"
-                    y=""
-                    ></use>
+                  <use xlink:href="./images/icons.svg#icon-send"
+                  width="24"
+                  height="24"
+                  x="25"
+                  y="0"></use>
                 </svg>
-                
+                </button>
         </div>
     </footer>
 </body>
