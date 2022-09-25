@@ -12,46 +12,45 @@
         <link rel="stylesheet" href="./css/modern-normalize.css">
     </head>
     <body>
-        <header class="header-container container">
-            <a href="index.html" class="Logo"> <span>Web</span>Studio</a>
-            <nav class="nav-container">
-            <ul class="nav-container-list">
-                    <li><a class="site-nav" href="index.html">Agencja</a></li>
-                    <li><a class="site-nav active" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="site-nav" href="contacts.html">Kontakty</a></li>
+        <header class="header container">
+            <a href="index.html" class="header__logo logo"> <span>Web</span>Studio</a>
+            <nav>
+            <ul class="header__nav">
+                    <li><a class="header__nav--color" href="index.html">Agencja</a></li>
+                    <li><a class="header__nav--color header--active" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="header__nav--color" href="contacts.html">Kontakty</a></li>
                 </ul>
             </nav>
-            <ul class="nav-container-contact">
-                    <li><a class="contact" href="mailto:info@devstudio.com">
-                        <svg class="contact-icon" width="16" height="12">
+            <ul class="header__contacts">
+                    <li><a class="header__contacts--color" href="mailto:info@devstudio.com">
+                        <svg class="header__icon" width="16" height="12">
                             <use xlink:href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                     info@devstudio.com</a></li>
-                    <li><a class="contact" href="tel:+48111111111">
-                        <svg class="contact-icon" width="10" height="16">
+                    <li><a class="header__contacts--color" href="tel:+48111111111">
+                        <svg class="header__icon" width="10" height="16">
                             <use xlink:href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                     +48 111 111 111</a></li>
                 </ul>
         </header>
+        <div class="header-border"></div>
         <main>
             <section>
-            <div class="container">
-            <ul class="nav-button-container-list">
-                <li><button class="nav-button" type="button">Wszystkie</button></li>
-                <li><button class="nav-button" type="button">Strony</button></li>
-                <li><button class="nav-button" type="button">Aplikacje</button></li>
-                <li><button class="nav-button" type="button">Dizajn</button></li>
-                <li><button class="nav-button" type="button">Marketing</button></li>
+            <ul class="top-section">
+                <li><button class="top-section__button" type="button">Wszystkie</button></li>
+                <li><button class="top-section__button" type="button">Strony</button></li>
+                <li><button class="top-section__button" type="button">Aplikacje</button></li>
+                <li><button class="top-section__button" type="button">Dizajn</button></li>
+                <li><button class="top-section__button" type="button">Marketing</button></li>
             </ul>
-            </div>
             </section>
             <section>
                 <div class="container">
-                <ul class="card-container-list">
-                    <li class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                <ul class="products">
+                    <li class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -63,12 +62,12 @@
                             </div>
                           </div>
                         <img src="./images/Porftolio1.jpg" alt="Making a difference" width="370" height="294" />
-                        <h4 class="little-picture-header">Technocrack</h4>
-                        <p class="card-text">Strona internetowa</p>
+                        <h4 class="products__header">Technocrack</h4>
+                        <p class="products__label">Strona internetowa</p>
                     </li>
-                    <li class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                    <li class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -80,12 +79,12 @@
                             </div>
                           </div>
                         <img src="./images/Portfolio2.jpg" alt="Guys playin basketball" width="370" height="294"/>
-                        <h4 class="little-picture-header">Grafika New Orlean vs Golden Star</h4>
-                        <p class="card-text">Dizajn</p>
+                        <h4 class="products__header">Grafika New Orlean vs Golden Star</h4>
+                        <p class="products__label">Dizajn</p>
                     </li>
-                    <li  class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                    <li  class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -97,12 +96,12 @@
                             </div>
                           </div>
                         <img src="./images/Portfolio3.jpg" alt="Banner of a seafood restaurant" width="370" height="294"/>
-                        <h4 class="little-picture-header">Restauracja Seafood</h4>
-                        <p class="card-text">Aplikacja</p>
+                        <h4 class="products__header">Restauracja Seafood</h4>
+                        <p class="products__label">Aplikacja</p>
                     </li>
-                    <li  class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                    <li  class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -114,12 +113,12 @@
                             </div>
                           </div>
                         <img src="./images/Portfolio4.jpg" alt="Picture of headphones" width="370" height="294"/>
-                        <h4 class="little-picture-header">Projekt Prime</h4>
-                        <p class="card-text">Marketing</p>
+                        <h4 class="products__header">Projekt Prime</h4>
+                        <p class="products__label">Marketing</p>
                     </li>
-                    <li  class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                    <li  class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -131,12 +130,12 @@
                             </div>
                           </div>
                         <img src="./images/Portfolio5.jpg" alt="Picture of two boxes" width="370" height="294"/>
-                        <h4 class="little-picture-header">Projekt Boxes</h4>
-                        <p class="card-text">Aplikacja</p>
+                        <h4 class="products__header">Projekt Boxes</h4>
+                        <p class="products__label">Aplikacja</p>
                     </li>
-                    <li  class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                    <li  class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -148,12 +147,12 @@
                             </div>
                           </div>
                         <img src="./images/Portfolio6.jpg" alt="Motivational quote display on a screen" width="370" height="294"/>
-                        <h4 class="little-picture-header">Inspiration has no Borders</h4>
-                        <p class="card-text">Strona internetowa</p>
+                        <h4 class="products__header">Inspiration has no Borders</h4>
+                        <p class="products__label">Strona internetowa</p>
                     </li>
-                    <li  class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                    <li  class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -165,12 +164,12 @@
                             </div>
                           </div>
                         <img src="./images/Portfolio7.jpg" alt="Picture of a magazine" width="370" height="294"/>
-                        <h4 class="little-picture-header">Magazyn Limited Edition</h4>
-                        <p class="card-text">Dizajn</p>
+                        <h4 class="products__header">Magazyn Limited Edition</h4>
+                        <p class="products__label">Dizajn</p>
                     </li>
-                    <li  class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                    <li  class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -182,12 +181,12 @@
                             </div>
                           </div>
                         <img src="./images/Portfolio8.jpg" alt="Picture of a label tag" width="370" height="294"/>
-                        <h4 class="little-picture-header">Projekt LAB</h4>
-                        <p class="card-text">Marketing</p>
+                        <h4 class="products__header">Projekt LAB</h4>
+                        <p class="products__label">Marketing</p>
                     </li>
-                    <li  class="card">
-                        <div class="card-description">
-                            <div class="card-animation">
+                    <li  class="products__card">
+                        <div class="description-hidden">
+                            <div class="description-visable">
                               <p>
                                 Technocrack jest popularną<br />
                                 platformą wykorzystywaną do<br />
@@ -199,28 +198,28 @@
                             </div>
                           </div>
                         <img src="./images/Portfolio9.jpg" alt="Picutre of a man typing sth on his laptop" width="370" height="294"/>
-                        <h4 class="little-picture-header">Growing Business</h4>
-                        <p class="card-text">Aplikacja</p>
+                        <h4 class="products__header">Growing Business</h4>
+                        <p class="products__label">Aplikacja</p>
                     </li>
                 </ul>
                 </div>
             </section>
         </main>
-            <footer class="footer-container">
-                <div class="footer-container-list container">
-                    <div class="footer-adress-container">
-                <a class="Logo footer-logo" href="index.html"><span>Web</span>Studio</a>
-                    <address class="footer-adress-text">m. Warszawa, Aleje Jerozolimskie 21</address>
-                    <ul class="footer-contacts">
-                        <li><a class="email-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="contact" href="tel:+48111111111">+48 111 111 111</a></li>
+            <footer class="footer">
+                <div class="footer__container container">
+                    <div class="footer__adress">
+                <a class="footer__logo logo" href="index.html"><span class="footer__logo--color">Web</span>Studio</a>
+                    <address class="footer__text">m. Warszawa, Aleje Jerozolimskie 21</address>
+                    <ul class="footer__links">
+                        <li><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="" href="tel:+48111111111">+48 111 111 111</a></li>
                     </ul>
                     </div>
-                <div class="footer-icons-container">
-                    <h4 class="footer-icons-header">DOŁĄCZ DO NAS</h4>
-                <ul class="footer-icons-list">
+                <div>
+                    <h4 class="footer__header">DOŁĄCZ DO NAS</h4>
+                <ul class="footer__icons">
                     <li>
-                        <svg class="footer-icon" width="44" height="44">
+                        <svg class="footer__icon" width="44" height="44">
                             <use xlink:href="./images/icons.svg#icon-instagram"
                             width="20"
                             height="20"
@@ -229,7 +228,7 @@
                         </svg>
                     </li>
                     <li>
-                        <svg class="footer-icon" width="44" height="44">
+                        <svg class="footer__icon" width="44" height="44">
                             <use xlink:href="./images/icons.svg#icon-twitter"
                             width="20"
                             height="20"
@@ -238,7 +237,7 @@
                         </svg>
                     </li>
                     <li>
-                        <svg class="footer-icon" width="44" height="44">
+                        <svg class="footer__icon" width="44" height="44">
                             <use xlink:href="./images/icons.svg#icon-facebook"
                             width="20"
                             height="20"
@@ -247,7 +246,7 @@
                         </svg>
                     </li>
                     <li>
-                        <svg class="footer-icon" width="44" height="44">
+                        <svg class="footer__icon" width="44" height="44">
                             <use xlink:href="./images/icons.svg#icon-linkedin"
                             width="20"
                             height="20"
@@ -258,10 +257,10 @@
                 </ul>
             </div>
             <div>
-                <h4 class="sign-up-header">ZAPISZ SIĘ DO NEWSLETTERA</h4>
-                <input type="text" class="sign-up" placeholder="E-mail"/>
-                <button type="submit" class="sign-up-button">Zapisz się</button>
-                <svg class="sing-up-svg">
+                <h4 class="footer__header">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+                <input type="text" class="footer__sign-up" placeholder="E-mail"/>
+                <button type="submit" class="footer__button">Zapisz się</button>
+                <svg class="footer__button--icon">
                     <use xlink:href="./images/icons.svg#icon-send"
                     width="24"
                     height="24"
