@@ -49,7 +49,7 @@
         bottom: 0;
         left: 0;
         background-color: $hover-text;
-        transform: translateY(30px);
+        transform: translateY(39px);
         border-radius: 2px;
     }
     &__contacts{
@@ -80,4 +80,7 @@
         margin: 0 10px 0 0;
     }
 
+}
+.header-border {
+    border-bottom: $header-line solid 1px;
 }
